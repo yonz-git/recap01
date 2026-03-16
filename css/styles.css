@@ -70,10 +70,13 @@ body {
 
 ul {
   list-style-type: none;
+  margin-left: 15px;
+  padding: 0;
 }
 
 .answer_list {
   display: flex;
+  justify-content: flex-start;
   gap: 6px;
 }
 
