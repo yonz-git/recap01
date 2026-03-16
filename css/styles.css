@@ -24,6 +24,7 @@ body {
   align-items: center;
   font-size: 25px;
   color: white;
+  font-weight: 500;
 }
 .main-content {
   display: flex;
@@ -93,4 +94,17 @@ footer {
   height: 80px;
   background-color: rgb(95, 187, 187);
   opacity: 0.8;
+}
+
+.nav_bar {
+  padding: 0; /* This removes that purple ghost space */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.nav_bar li {
+  scale: 1.7;
 }
