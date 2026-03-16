@@ -16,6 +16,7 @@ body {
   width: 100vw;
   height: 80px;
   border-radius: 0 0 20px 20px;
+  z-index: 999;
 }
 
 .main-title {
@@ -30,15 +31,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
+.question-box_01 {
+  margin-top: 14vh;
+}
 .question-box {
   position: relative;
-  margin-top: 20vh;
-  width: 80vw;
-  height: 40hw;
+  margin-top: 1rem;
+  width: 90vw;
+  height: 38vh;
   background-color: var(--box-color);
   border-radius: 18px;
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+}
+
+.question-box_01 {
+  margin-top: 14vh;
 }
 
 .icon_bookmark {
@@ -63,8 +76,8 @@ body {
 .btn_show_answer {
   background-color: rgb(252, 215, 221);
   display: block; /* Buttons are 'inline' by default, change to block */
-  margin: 20px auto; /* 20px top/bottom, 'auto' centers it left/right */
-  width: 150px; /* Needs a width for auto-margin to work */
+  margin: 10px auto; /* 20px top/bottom, 'auto' centers it left/right */
+  width: 120px; /* Needs a width for auto-margin to work */
   border-radius: 20px;
 }
 
@@ -75,19 +88,22 @@ ul {
 }
 
 .answer_list {
+  padding: 0; /* This removes that purple ghost space */
+  margin: 0;
   display: flex;
   justify-content: flex-start;
-  gap: 6px;
+  margin-top: auto; /* Pushes the list to the very bottom of the card*/
 }
 
 .answer_list li {
   width: auto;
   height: auto;
   background-color: rgb(102, 148, 164);
-  font-size: 12px;
+  font-size: 15px;
   padding: 2px 10px 2px 10px;
   border-radius: 5px;
   color: aliceblue;
+  margin: 0 0 8px 8px;
 }
 
 footer {
@@ -96,7 +112,7 @@ footer {
   width: 100vw;
   height: 80px;
   background-color: rgb(95, 187, 187);
-  opacity: 0.8;
+  border-radius: 20px 20px 0 0;
 }
 
 .nav_bar {
