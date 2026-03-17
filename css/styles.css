@@ -32,8 +32,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
+}
+
+main:nth-child(3) {
+  margin-bottom: 14vh;
+  background-color: red !important;
 }
 
 .question {
@@ -41,9 +46,7 @@ body {
   text-align: center;
   /* background-color: orange; */
 }
-.question-box_01 {
-  margin-top: 14vh;
-}
+
 .question-box {
   position: relative;
   margin-top: 1rem;
@@ -67,10 +70,12 @@ body {
 }
 
 .question {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .answer {
@@ -85,7 +90,8 @@ body {
   margin: 10px auto; /* 20px top/bottom, 'auto' centers it left/right */
   width: 120px; /* Needs a width for auto-margin to work */
   border-radius: 20px;
-  margin-top: auto;
+  /* margin-top: auto; */
+  margin-top: -10px;
 }
 
 ul {
