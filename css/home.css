@@ -26,7 +26,7 @@
   /* background-color: orange; */
 }
 
-.question-box {
+.questionBox {
   margin-top: 1rem;
   width: 90vw;
   height: 38vh;
@@ -43,21 +43,36 @@
   position: relative;
 }
 
-.question-box_01 {
+.questionBox01 {
   margin-top: 14vh;
 }
 
-.question-box_01 > p {
-}
 
-.question-box_03 > p {
-}
 
-.icon_bookmark {
-  top: -6.5px;
+.iconBookmark {
+  top: -6.5px; /* Stick to the very top */
   right: 16px;
   scale: 1.3;
   position: absolute;
+  cursor: pointer;
+}
+
+/* .iconBookmark:active {
+  background-color: red;
+} */
+
+.iconBookmark path {
+  fill: rgb(201, 241, 241);
+
+  transition: fill 0.2s ease;
+}
+
+/* .iconBookmark:active path {
+  fill: rgb(54, 19, 116) !important;
+} */
+
+.iconBookmark.is-active path {
+  fill: rgb(0, 0, 0);!important;
 }
 
 .question {
@@ -76,7 +91,7 @@
   display: none;
 }
 
-.btn_show_answer {
+.btnShowAnswer {
   background-color: rgb(252, 215, 221);
   margin: 10px auto; /* 20px top/bottom, 'auto' centers it left/right */
   width: 120px; /* Needs a width for auto-margin to work */
@@ -91,7 +106,7 @@ ul {
   padding: 0;
 }
 
-.answer_list {
+.answerList {
   padding: 0; /* This removes that purple ghost space */
   margin: 0;
   display: flex;
@@ -99,7 +114,7 @@ ul {
   margin-top: auto; /* Pushes the list to the very bottom of the card*/
 }
 
-.answer_list li {
+.answerList li {
   width: auto;
   height: auto;
   background-color: rgb(102, 148, 164);
