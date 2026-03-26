@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("home.css");
 body {
   margin: 0;
   font-family: "Jost", sans-serif;
@@ -26,114 +26,6 @@ body {
   font-size: 1.6rem;
   color: white;
   font-weight: 500;
-}
-.main-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  /* margin: 0; */
-  /* padding: 0; */
-
-  padding-bottom: 14vh;
-}
-
-.questionBoxContainer {
-  /* display: flex;
-
-  justify-content: center; */
-  width: 100%;
-  display: grid;
-  place-items: center;
-}
-
-.question {
-  margin-top: 2em;
-  text-align: center;
-  /* background-color: orange; */
-}
-
-.question-box {
-  margin-top: 1rem;
-  width: 90vw;
-  height: 38vh;
-  background-color: var(--box-color);
-  border-radius: 18px;
-  /* display: flex; */
-
-  /* flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
-  gap: 20px; */
-  display: grid;
-  place-items: center;
-}
-
-.question-box_01 {
-  margin-top: 14vh;
-}
-
-.question-box_01 > p {
-}
-
-.question-box_03 > p {
-}
-
-.icon_bookmark {
-  top: -6.5px; /* Stick to the very top */
-  right: 16px;
-  scale: 1.3;
-  position: absolute;
-}
-
-.question {
-  font-size: 1.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.answer {
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: center;
-  display: none;
-}
-
-.btn_show_answer {
-  background-color: rgb(252, 215, 221);
-  margin: 10px auto; /* 20px top/bottom, 'auto' centers it left/right */
-  width: 120px; /* Needs a width for auto-margin to work */
-  border-radius: 20px;
-  /* margin-top: auto; */
-  margin-top: -10px;
-}
-
-ul {
-  list-style-type: none;
-  margin-left: 15px;
-  padding: 0;
-}
-
-.answer_list {
-  padding: 0; /* This removes that purple ghost space */
-  margin: 0;
-  display: flex;
-  justify-content: flex-start;
-  margin-top: auto; /* Pushes the list to the very bottom of the card*/
-}
-
-.answer_list li {
-  width: auto;
-  height: auto;
-  background-color: rgb(102, 148, 164);
-  font-size: 15px;
-  padding: 2px 10px 2px 10px;
-  border-radius: 5px;
-  color: aliceblue;
-  margin: 0 0 10px 10px;
 }
 
 footer {
