@@ -26,7 +26,7 @@
   /* background-color: orange; */
 }
 
-.questionBox {
+.question-box {
   margin-top: 1rem;
   width: 90vw;
   height: 38vh;
@@ -43,7 +43,7 @@
   position: relative;
 }
 
-.questionBox01 {
+.question-box_01 {
   margin-top: 14vh;
 }
 
@@ -53,7 +53,7 @@
 .question-box_03 > p {
 }
 
-.iconBookmark {
+.icon_bookmark {
   top: -6.5px;
   right: 16px;
   scale: 1.3;
@@ -76,7 +76,7 @@
   display: none;
 }
 
-.btnShowAnswer {
+.btn_show_answer {
   background-color: rgb(252, 215, 221);
   margin: 10px auto; /* 20px top/bottom, 'auto' centers it left/right */
   width: 120px; /* Needs a width for auto-margin to work */
@@ -91,7 +91,7 @@ ul {
   padding: 0;
 }
 
-.answerList {
+.answer_list {
   padding: 0; /* This removes that purple ghost space */
   margin: 0;
   display: flex;
@@ -99,7 +99,7 @@ ul {
   margin-top: auto; /* Pushes the list to the very bottom of the card*/
 }
 
-.answerList li {
+.answer_list li {
   width: auto;
   height: auto;
   background-color: rgb(102, 148, 164);
@@ -108,4 +108,8 @@ ul {
   border-radius: 5px;
   color: aliceblue;
   margin: 0 0 10px 10px;
+}
+
+.navBarBookmark {
+  filter: invert(100);
 }

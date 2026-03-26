@@ -196,3 +196,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.navBarProfile {
+  filter: invert(100);
+}

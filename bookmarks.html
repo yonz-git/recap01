@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-     <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/bookmark.css" />
+    <script src="js/index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -14,107 +16,43 @@
       </nav>
     </header>
 
-    <main class="main-content">
-      <div id="bookmarks-container" data-js="bookmarksContainer"></div>
-      <div class="question-box question-box_01">
-        <svg
-          class="icon_bookmark"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path
-            fill="#000"
-            stroke="#000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M17 3H7a2 2 0 0 0-2 2v15.138a.5.5 0 0 0 .748.434l5.26-3.005a2 2 0 0 1 1.984 0l5.26 3.006a.5.5 0 0 0 .748-.435V5a2 2 0 0 0-2-2"
-          />
-        </svg>
-        <p class="question">What does CSS stand for?</p>
+    <main class="main-content" data-js="mainContent">
+      <!-- <div class="questionBoxContainer">
+        <div class="questionBox questionBox01" data-id="1">
+          <svg
+            data-js="bookmarkIcon"
+            class="iconBookmark"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+            
+              stroke="#000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 3H7a2 2 0 0 0-2 2v15.138a.5.5 0 0 0 .748.434l5.26-3.005a2 2 0 0 1 1.984 0l5.26 3.006a.5.5 0 0 0 .748-.435V5a2 2 0 0 0-2-2"
+            />
+          </svg>
+          <p class="question">What does CSS stand for?</p>
 
-        <p class="answer">Cascading Style Sheets</p>
-        <button class="btn_show_answer">
-          <p class="show_answer">Show Answer</p>
-        </button>
-        <ul class="answer_list">
-          <li>CSS</li>
-          <li>Web Dev</li>
-          <li>Styling</li>
-        </ul>
-      </div>
-      <!-- 
-
-      <div class="question-box question-box_02">
-        <svg
-          class="icon_bookmark"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path
-            fill="#000"
-            stroke="#000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M17 3H7a2 2 0 0 0-2 2v15.138a.5.5 0 0 0 .748.434l5.26-3.005a2 2 0 0 1 1.984 0l5.26 3.006a.5.5 0 0 0 .748-.435V5a2 2 0 0 0-2-2"
-          />
-        </svg>
-        <p class="question">
-          Which HTML tag is used to link an external CSS file to an HTML
-          document?
-        </p>
-
-        <p class="answer">&lt;link&gt;</p>
-        <button class="btn_show_answer">
-          <p class="show_answer">Show Answer</p>
-        </button>
-        <ul class="answer_list">
-          <li>CSS</li>
-          <li>Web Dev</li>
-          <li>Styling</li>
-        </ul>
-      </div>
-
-      <div class="question-box question-box_03">
-        <svg
-          class="icon_bookmark"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path
-            fill="#000"
-            stroke="#000"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M17 3H7a2 2 0 0 0-2 2v15.138a.5.5 0 0 0 .748.434l5.26-3.005a2 2 0 0 1 1.984 0l5.26 3.006a.5.5 0 0 0 .748-.435V5a2 2 0 0 0-2-2"
-          />
-        </svg>
-        <p class="question">
-          What is the purpose of the HTML &lt;div&gt; element?
-        </p>
-
-        <p class="answer"><link /></p>
-        <button class="btn_show_answer">
-          <p class="show_answer">Show Answer</p>
-        </button>
-        <ul class="answer_list">
-          <li>CSS</li>
-          <li>Web Dev</li>
-          <li>Styling</li>
-        </ul>
-      </div>
-    </main> -->
+          <p class="answer">Cascading Style Sheets</p>
+          <button class="btnShowAnswer">
+            <p class="showAnswer">Show Answer</p>
+          </button>
+          <ul class="answerList">
+            <li>CSS</li>
+            <li>Web Dev</li>
+            <li>Styling</li>
+          </ul>
+        </div>
+      </div> -->
+    </main>
 
     <footer>
-      <ul class="nav_bar">
+      <ul class="navBar">
         <li>
           <a
             href="/Users/yonz/Desktop/Neuefische/web-bootcamp/recap01/index.html"
@@ -125,11 +63,17 @@
           /></a>
         </li>
 
-        <li>
+        <li class="navBarBookmark">
           <img src="assets/bookmark.svg" alt="" />
         </li>
 
-        <li><img src="assets/circle-user-round.svg" alt="" /></li>
+        <li>
+          <a
+            href="/Users/yonz/Desktop/Neuefische/web-bootcamp/recap01/profile.html"
+          >
+            <img src="assets/circle-user-round.svg" alt=""
+          /></a>
+        </li>
       </ul>
     </footer>
   </body>

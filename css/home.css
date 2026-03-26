@@ -49,7 +49,8 @@
 
 
 
-.iconBookmark {
+.iconBookmark
+ {
   top: -6.5px; /* Stick to the very top */
   right: 16px;
   scale: 1.3;
@@ -71,9 +72,10 @@
   fill: rgb(54, 19, 116) !important;
 } */
 
-.iconBookmark.is-active path {
-  fill: rgb(0, 0, 0);!important;
+.active path{
+fill: rgb(0, 0, 0);!important;
 }
+
 
 .question {
   font-size: 1.4rem;
@@ -123,4 +125,9 @@ ul {
   border-radius: 5px;
   color: aliceblue;
   margin: 0 0 10px 10px;
+}
+
+
+.navBarHome {
+  filter: invert(100);
 }

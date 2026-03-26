@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("home.css");
+
+@import url("bookmark.css");
+
 body {
   margin: 0;
   font-family: "Jost", sans-serif;
@@ -37,7 +39,7 @@ footer {
   border-radius: 20px 20px 0 0;
 }
 
-.nav_bar {
+.navBar {
   padding: 0; /* This removes that purple ghost space */
   margin: 0;
   display: flex;
@@ -46,6 +48,6 @@ footer {
   height: 100%;
 }
 
-.nav_bar li {
+.navBar li {
   scale: 1.7;
 }
