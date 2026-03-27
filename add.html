@@ -4,60 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/form.css" />
 
     <script src="js/index.js" defer></script>
     <script src="js/showanswer.js" defer></script>
     <script src="js/darkmode.js" defer></script>
      <script src="js/navbar.js" defer></script>
+         <script src="js/form.js" defer></script>
 
     <title>Document</title>
   </head>
   <body class="pageAdd">
     <header>
       <nav class="site-nav">
-        <p class="main-title" aria-labelledby="title">CSS and HTML Quiz</p>
+        <p class="main-title" aria-labelledby="title">Create new Cards</p>
       </nav>
     </header>
 
 
-  
-</main>
-    <main class="main-content addPage" data-js="">
-      <div class="questionBoxContainer">
+    <main id="formContent" class="formContent">
+      <section class="newCardContainer questionBoxContainer">
 
-        <div class="questionBox questionBox01" data-id="1">
+        <article class="newCard" >
           
-          <h2 class="addQuestion">Add your question!</h2>
           <form data-js="form">
     <label id="label" for="question">Your Question:</label>
     <textarea id="question" name="question" rows="3" required></textarea>
+    <!-- <p class="characters">16 characters left</p> -->
 
     <label id="label" for="answer">The Answer:</label>
     <textarea id="answer" name="answer" rows="3" required></textarea>
 
+ <!-- <p class="characters">150 characters left</p> -->
     <label id="label" for="tag">Hashtag:</label>
     <input type="text" id="tag" name="tag" placeholder="#css" required />
 
-    <button type="submit" class="btnSubmit ">Create Question</button>
+    <button type="submit" class="btnSubmit" data-js="submit">Create Question</button>
   </form>
 
           
-        </div>
+</article>
      
-         <!-- <form data-js="form">
-    <label for="question">Your Question:</label>
-    <textarea id="question" name="question" rows="3" required></textarea>
-
-    <label for="answer">The Answer:</label>
-    <textarea id="answer" name="answer" rows="3" required></textarea>
-
-    <label for="tag">Hashtag:</label>
-    <input type="text" id="tag" name="tag" placeholder="#css" required />
-
-    <button type="submit" class="btnSubmit">Create Question</button>
-  </form> -->
-        </div>
-      </div>
+       
+  </form> 
+</section>
+ 
     </main>
 
 <footer class="navBarContainer frosted" data-js="footerContainer"></footer>

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+.formContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding-bottom: 14vh;
+}
+
+.newCardContainer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+label {
+  font-size: 1.3rem;
+}
+.question {
+  margin-top: 1.5em;
+  text-align: center;
+  width: 80vw;
+  font-size: 1.6rem;
+}
+
+.newCard {
+  width: 90vw;
+  height: auto;
+  background: var(--box-color);
+  border-radius: 3rem;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+  /* display: grid;
+  place-items: center; */
+  position: relative;
+  box-shadow: var(--box-shadow);
+  margin: 1rem;
+  margin-top: 16vh;
+}
