@@ -1,13 +1,3 @@
-// const bookmarkIcons = document.querySelectorAll('[data-js="bookmarkIcon"]');
-
-// bookmarkIcons.forEach((icon) => {
-//   icon.addEventListener("click", () => {
-//     icon.classList.toggle("is-active");
-//   });
-
-//   console.log("Bookmark toggled!", icon.classList.contains("is-active"));
-// });
-
 const bookmarkIcons = document.querySelectorAll('[data-js="bookmarkIcon"]');
 
 bookmarkIcons.forEach((icon) => {
@@ -47,7 +37,7 @@ div class="questionBoxContainer">
           <button class="btnShowAnswer">
             <p class="showAnswer">Show Answer</p>
           </button>
-          <ul class="answerList">
+          <ul class="tagList">
             <li>CSS</li>
             <li>Web Dev</li>
             <li>Styling</li>
@@ -57,7 +47,7 @@ div class="questionBoxContainer">
 `;
 
 // 3. NOW you can add your event listeners because the elements exist!
-const bookmarkIcon = document.querySelector('[data-js="bookmarkIcon"]');
-bookmarkIcon.addEventListener("click", () => {
-  bookmarkIcon.classList.toggle("is-active");
-});
+// const bookmarkIcon = document.querySelector('[data-js="bookmarkIcon"]');
+// bookmarkIcon.addEventListener("click", () => {
+//   bookmarkIcon.classList.toggle("is-active");
+// });

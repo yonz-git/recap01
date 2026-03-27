@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/home.css" />
+
     <script src="js/index.js" defer></script>
+    <script src="js/showanswer.js" defer></script>
+    <script src="js/darkmode.js" defer></script>
+
     <title>Document</title>
   </head>
   <body>
     <header>
       <nav class="site-nav">
-        <p class="main-title">CSS and HTML Quiz</p>
+        <p class="main-title" aria-labelledby="title">CSS and HTML Quiz</p>
       </nav>
     </header>
 
@@ -36,11 +39,11 @@
           </svg>
           <p class="question">What does CSS stand for?</p>
 
-          <p class="answer">Cascading Style Sheets</p>
-          <button class="btnShowAnswer">
+          <p class="answer" data-js="answerText">Cascading Style Sheets</p>
+          <button type="button" class="btnShowAnswer" data-js="btnShowAnswer">
             <p class="showAnswer">Show Answer</p>
           </button>
-          <ul class="answerList">
+          <ul class="tagList">
             <li>CSS</li>
             <li>Web Dev</li>
             <li>Styling</li>
@@ -73,10 +76,10 @@
           </p>
 
           <p class="answer">&lt;link&gt;</p>
-          <button class="btnShowAnswer">
+          <button type="button" class="btnShowAnswer">
             <p class="showAnswer">Show Answer</p>
           </button>
-          <ul class="answerList">
+          <ul class="tagList">
             <li>CSS</li>
             <li>Web Dev</li>
             <li>Styling</li>
@@ -106,11 +109,13 @@
           What is the purpose of the HTML &lt;div&gt; element?
         </p>
 
-        <p class="answer"><link /></p>
-        <button class="btnShowAnswer">
+        <p class="answer">
+          It is a container element used to group and style content together.
+        </p>
+        <button type="button" class="btnShowAnswer">
           <p class="showAnswer">Show Answer</p>
         </button>
-        <ul class="answerList">
+        <ul class="tagList">
           <li>CSS</li>
           <li>Web Dev</li>
           <li>Styling</li>
@@ -121,9 +126,7 @@
     <footer>
       <ul class="navBar">
         <li class="navBarHome">
-          <a
-            href="/Users/yonz/Desktop/Neuefische/web-bootcamp/recap01/index.html"
-          >
+          <a href="index.html" aria-label="Go to Home Page">
             <img
               src="/Users/yonz/Desktop/Neuefische/web-bootcamp/recap01/assets/house.svg"
               alt=""
@@ -131,41 +134,17 @@
         </li>
 
         <li>
-          <a
-            href="/Users/yonz/Desktop/Neuefische/web-bootcamp/recap01/bookmarks.html"
-          >
+          <a href="bookmarks.html" aria-label="Go to Bookmark Page">
             <img src="assets/bookmark.svg" alt=""
           /></a>
         </li>
 
         <li>
-          <a
-            href="/Users/yonz/Desktop/Neuefische/web-bootcamp/recap01/profile.html"
-          >
+          <a href="profile.html" aria-label="Go to Profile Page">
             <img src="assets/circle-user-round.svg" alt=""
           /></a>
         </li>
       </ul>
     </footer>
-
-    <!-- <footer>
-      <ul class="navBar">
-        <li class="navBarHome">
-          <img
-            src="/Users/yonz/Desktop/Neuefische/web-bootcamp/recap01/assets/house.svg"
-            alt=""
-          />
-        </li>
-        <li>
-          <a
-          href="/Users/yonz/Desktop/Neuefische/web-bootcamp/recap01/bookmarks.html"
-        >
-          <img src="assets/bookmark.svg" alt="" />
-        </li>
-        <li>  <a
-          href="/Users/yonz/Desktop/Neuefische/web-bootcamp/recap01/profile.html"
-        ><img src="assets/circle-user-round.svg" alt="" /></li>
-      </ul>
-    </footer> -->
   </body>
 </html>

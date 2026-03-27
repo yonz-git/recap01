@@ -39,17 +39,24 @@ body {
 }
 
 .profileContent {
-  margin-top: 8rem;
+  margin-top: 10rem;
 
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 80vw;
 }
 
 .profileImageContainer {
   width: 50%;
   display: flex;
   justify-content: center;
+}
+
+.profileImage {
+  width: 9rem;
+  background-color: pink;
+  height: 9rem;
+  border-radius: 50px;
 }
 
 .name {
@@ -66,7 +73,7 @@ body {
 .aboutMeTitle {
   display: flex;
   justify-content: flex-start;
-  margin: 1.5rem 0 0 0;
+  margin: 3rem 0 1rem 0;
 }
 
 footer {
@@ -92,46 +99,44 @@ footer {
   scale: 1.7;
 }
 
-.profileImage {
-  width: 100px;
-  background-color: pink;
-  height: 100px;
-  border-radius: 50px;
-}
-
-.list {
-  list-style-type: none;
-  padding: 0; /* This removes that purple ghost space */
-  margin: 0;
+.counter-list {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem; /* Pushes the list to the very bottom of the card*/
+  gap: 2rem;
+  margin: 2rem 0 3rem 0;
 }
 
-.list li {
-  width: auto;
-  height: auto;
-  background-color: rgb(102, 148, 164);
-  font-size: 15px;
-  padding: 2px 10px 2px 10px;
-  border-radius: 5px;
-  color: aliceblue;
-  margin: 0 0 10px 10px;
+.counter-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70px;
+  padding: 0.3rem;
+  color: #000;
+  border: 1px solid #2fc3c8ec;
+  border-radius: 8px;
+  background-color: rgba(109, 213, 213, 0.787);
 }
 
 .settings {
-  display: flex;
+  width: 80vw;
+  height: 20vh;
+}
 
+.settingsTitle {
+}
+
+.darkmodeContaier {
+  display: flex;
+  justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  width: 80vw;
 }
 
 .darkmode {
-  width: 50%;
+  /* width: 50%; */
   justify-content: center;
+  justify-content: space-between;
 }
 
 .switch {
@@ -139,7 +144,7 @@ footer {
 
   width: 60px;
   height: 34px;
-  justify-content: flex-end;
+  margin: 0 2rem 0 2rem;
 }
 
 /* Hide default HTML checkbox */
@@ -175,7 +180,7 @@ footer {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: rgba(109, 213, 213, 0.787);
 }
 
 input:focus + .slider {
@@ -190,6 +195,7 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
+  border: 1px solid #2fc3c8ec;
   border-radius: 34px;
 }
 

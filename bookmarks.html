@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/bookmark.css" />
+
     <script src="js/index.js" defer></script>
+    <script src="js/showanswer.js" defer></script>
+    <script src="js/darkmode.js" defer></script>
+
     <title>Document</title>
   </head>
   <body>
     <header>
       <nav class="site-nav">
-        <p class="main-title">CSS and HTML Quiz</p>
+        <p class="main-title" aria-labelledby="title">CSS and HTML Quiz</p>
       </nav>
     </header>
 
@@ -54,9 +56,7 @@
     <footer>
       <ul class="navBar">
         <li>
-          <a
-            href="/Users/yonz/Desktop/Neuefische/web-bootcamp/recap01/index.html"
-          >
+          <a href="index.html" aria-label="Go to Home Page">
             <img
               src="/Users/yonz/Desktop/Neuefische/web-bootcamp/recap01/assets/house.svg"
               alt=""
@@ -64,13 +64,13 @@
         </li>
 
         <li class="navBarBookmark">
-          <img src="assets/bookmark.svg" alt="" />
+          <a href="bookmarks.html" aria-label="Go to Bookmark Page">
+            <img src="assets/bookmark.svg" alt=""
+          /></a>
         </li>
 
         <li>
-          <a
-            href="/Users/yonz/Desktop/Neuefische/web-bootcamp/recap01/profile.html"
-          >
+          <a href="profile.html" aria-label="Go to Profile Page">
             <img src="assets/circle-user-round.svg" alt=""
           /></a>
         </li>

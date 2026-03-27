@@ -29,17 +29,18 @@
 .questionBox {
   margin-top: 1rem;
   width: 90vw;
-  height: 38vh;
+  height: auto;
   background-color: var(--box-color);
   border-radius: 18px;
-  /* display: flex; */
 
-  /* flex-direction: column;
+  display: flex;
+
+  flex-direction: column;
   justify-content: center; 
   align-items: center; 
-  gap: 20px; */
-  display: grid;
-  place-items: center;
+  /* gap: 20px; */
+  /* display: grid;
+  place-items: center; */
   position: relative;
 }
 
@@ -58,9 +59,6 @@
   cursor: pointer;
 }
 
-/* .iconBookmark:active {
-  background-color: red;
-} */
 
 .iconBookmark path {
   fill: rgb(201, 241, 241);
@@ -68,9 +66,6 @@
   transition: fill 0.2s ease;
 }
 
-/* .iconBookmark:active path {
-  fill: rgb(54, 19, 116) !important;
-} */
 
 .active path{
 fill: rgb(0, 0, 0);!important;
@@ -87,19 +82,35 @@ fill: rgb(0, 0, 0);!important;
 }
 
 .answer {
-  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
+    color: var(--font-color);
+  font-weight: 600;
   display: none;
+  width: 86%;
+  text-align: center;
+
+}
+
+.is-visible {
+  display: flex;
+
+}
+
+.answer.is-visible {
+  display: flex;
+
 }
 
 .btnShowAnswer {
   background-color: rgb(252, 215, 221);
-  margin: 10px auto; /* 20px top/bottom, 'auto' centers it left/right */
-  width: 120px; /* Needs a width for auto-margin to work */
+
+  width: 120px; 
   border-radius: 20px;
-  /* margin-top: auto; */
-  margin-top: -10px;
+  cursor: pointer;
+
 }
 
 ul {
@@ -108,15 +119,17 @@ ul {
   padding: 0;
 }
 
-.answerList {
+.tagList {
   padding: 0; /* This removes that purple ghost space */
-  margin: 0;
+  
+    margin: 2rem 0 1rem 0;
   display: flex;
   justify-content: flex-start;
-  margin-top: auto; /* Pushes the list to the very bottom of the card*/
+  /* margin-top: auto;  */
+  /* Pushes the list to the very bottom of the card*/
 }
 
-.answerList li {
+.tagList li {
   width: auto;
   height: auto;
   background-color: rgb(102, 148, 164);

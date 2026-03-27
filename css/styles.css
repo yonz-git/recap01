@@ -1,22 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import url("bookmark.css");
+@import url("home.css");
+@import url("profile.css");
 
 body {
   margin: 0;
   font-family: "Jost", sans-serif;
-  background-color: rgb(43, 60, 60);
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
 :root {
   --box-color: rgb(201, 241, 241);
+  --font-color: rgb(8, 17, 17);
+  --bg-color: rgb(165 213 213);
+}
+/* 
+body.darkMode {
+  filter: invert(100);
+  --bg-color: rgb(21, 65, 65);
+  --box-color: rgba(201, 241, 241, 0.177);
+  --font-color: rgb(236, 255, 255);
+} */
+
+.darkMode {
+  --bg-color: rgb(21, 55, 65);
+  --box-color: rgb(45, 82, 86);
+  --font-color: rgb(236, 255, 255);
 }
 
 .site-nav {
   background-color: rgb(81, 162, 162);
   position: fixed;
   width: 100vw;
-  height: 12vh;
+  height: 11vh;
   border-radius: 0 0 20px 20px;
   z-index: 999;
 }
@@ -28,6 +46,26 @@ body {
   font-size: 1.6rem;
   color: white;
   font-weight: 500;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+span {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 footer {
