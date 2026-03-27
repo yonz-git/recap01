@@ -91,6 +91,8 @@ fill: rgb(0, 0, 0);!important;
   display: none;
   width: 86%;
   text-align: center;
+  transition: all 500ms ease-in-out;
+  
 
 }
 
@@ -105,9 +107,10 @@ fill: rgb(0, 0, 0);!important;
 }
 
 .btnShowAnswer {
+ transition: all 500ms ease-in-out;
   background-color: rgb(252, 215, 221);
-
-  width: 120px; 
+padding: 0 1rem 0 1rem;
+  width: auto; 
   border-radius: 20px;
   cursor: pointer;
 

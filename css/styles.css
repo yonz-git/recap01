@@ -9,6 +9,7 @@ body {
   font-family: "Jost", sans-serif;
   background-color: var(--bg-color);
   color: var(--font-color);
+  transition: all 300ms ease-in-out;
 }
 
 :root {
