@@ -10,15 +10,6 @@ body {
   --box-color: rgb(201, 241, 241);
 }
 
-.site-nav {
-  background-color: rgb(81, 162, 162);
-  position: fixed;
-  width: 100vw;
-  height: 12vh;
-  border-radius: 0 0 20px 20px;
-  z-index: 999;
-}
-
 .main-title {
   display: flex;
   justify-content: center;
@@ -53,10 +44,18 @@ body {
 }
 
 .profileImage {
-  width: 9rem;
+  /* width: 9rem;
   background-color: pink;
   height: 9rem;
-  border-radius: 100px;
+  border-radius: 100px; */
+
+  width: 10rem;
+  height: 10rem;
+  border-radius: 20%;
+  background-color: #3951548f;
+  background: linear-gradient(-35deg, #8dbaa2b1 0%, #e9fffebd 100%);
+
+  box-shadow: var(--box-shadow);
 }
 
 .name {
@@ -73,7 +72,7 @@ body {
 .aboutMeTitle {
   display: flex;
   justify-content: flex-start;
-  margin: 3rem 0 1rem 0;
+  margin: 4rem 0 1rem 0;
 }
 
 footer {
@@ -113,9 +112,9 @@ footer {
   width: 70px;
   padding: 0.3rem;
   color: #000;
-  border: 1px solid #2fc3c8ec;
+
   border-radius: 8px;
-  background-color: rgba(109, 213, 213, 0.787);
+  background-color: rgb(149 202 186 / 84%);
 }
 
 .settings {
@@ -162,7 +161,12 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background:
+    -10px -10px 30px #ffffff,
+    10px 10px 30px rgba(174, 174, 192, 0.4),
+    inset -10px -10px 10px rgba(174, 174, 192, 0.25),
+    inset 10px 10px 10px #ffffff;
+  /* background-color: #c1dcc1b3; */
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -180,7 +184,7 @@ footer {
 }
 
 input:checked + .slider {
-  background-color: rgba(109, 213, 213, 0.787);
+  background: rgba(97, 156, 156);
 }
 
 input:focus + .slider {
@@ -195,14 +199,10 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
-  border: 1px solid #2fc3c8ec;
+  border: 0.5px solid #3e555a92;
   border-radius: 34px;
 }
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-.navBarProfile {
-  filter: invert(100);
 }

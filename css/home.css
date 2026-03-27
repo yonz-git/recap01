@@ -21,73 +21,82 @@
 }
 
 .question {
-  margin-top: 2em;
+  margin-top: 1.5em;
   text-align: center;
-
+  width: 80vw;
+  font-size: 1.6rem;
 }
 
 .questionBox {
-  margin-top: 1rem;
   width: 90vw;
   height: auto;
-  background-color: var(--box-color);
-  border-radius: 18px;
+  background: var(--box-color);
+  border-radius: 3rem;
 
   display: flex;
 
   flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   /* gap: 20px; */
   /* display: grid;
   place-items: center; */
   position: relative;
+  box-shadow: var(--box-shadow);
+  margin: 1rem;
 }
 
+/* .questionBox.darkMode {
+  box-shadow:
+    -10px -10px 30px #293e3f7d,
+    10px 10px 30px rgb(43 68 73 / 45%),
+    inset -5px -5px 10px rgb(45 68 75 / 53%),
+    inset 5px 5px 10px #83b9bc63 !important;
+} */
 .questionBox01 {
-  margin-top: 14vh;
+  margin-top: 16vh;
 }
 
-
-
-.iconBookmark
- {
-  top: -6.5px; /* Stick to the very top */
-  right: 16px;
-  scale: 1.3;
+.iconBookmark {
+  top: -0.5px;
+  right: 2.7em;
+  scale: 2;
   position: absolute;
   cursor: pointer;
 }
 
-
 .iconBookmark path {
-  fill: rgb(201, 241, 241);
-
-  transition: fill 0.2s ease;
+  fill: var(--bookmark-color);
+  stroke: #2a3e4196;
+  stroke-width: 1;
+  transition: fill 0.2s ease-in-out;
+  box-shadow:
+    -10px -10px 30px #3d5755d4,
+    10px 10px 20px rgb(43 65 63 / 69%);
+  /* box-shadow:
+    -10px -10px 30px #293e3f7d,
+    10px 10px 30px rgb(43 68 73 / 45%),
+    inset -5px -5px 10px rgb(45 68 75 / 53%),
+    inset 5px 5px 10px #83b9bc63 !important; */
 }
 
+/* .iconBookmark path:hover {
+  fill: #c7e7de;
+  transition: all 0.2s ease-in-out;
+} */
 
-.active path{
-fill: rgb(0, 0, 0);!important;
-}
-
-
-.question {
-  font-size: 1.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
+.active path {
+  fill: rgba(11, 32, 40, 0.914) !important;
 }
 
 .answer {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  /* max-height: 0; */
+  margin: 0;
+  font-size: 1.7rem;
   display: flex;
   justify-content: center;
-    color: var(--font-color);
-  font-weight: 600;
+  color: var(--font-color);
+  font-weight: 500;
   /* display: none; */
   width: 86%;
   text-align: center;
@@ -95,10 +104,15 @@ fill: rgb(0, 0, 0);!important;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px); /* Starts slightly higher */
-  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+  transition:
+    opacity 500ms ease-in-out,
+    transform 500ms ease-in-out;
   height: 0; /* Keeps it from taking up space when hidden */
   overflow: hidden;
 
+  transition:
+    opacity 0.3s ease-in-out,
+    margin 0.3s ease-in-out;
 }
 
 .is-visible {
@@ -107,8 +121,7 @@ fill: rgb(0, 0, 0);!important;
   visibility: visible;
   transform: translateY(0); /* Slides down into place */
   height: auto; /* Warning: height: auto doesn't animate, see note below */
-  margin-top: 1rem;
-
+  margin: 1rem 0 2.8rem 0;
 }
 
 /* .answer.is-visible {
@@ -117,17 +130,38 @@ fill: rgb(0, 0, 0);!important;
 } */
 
 .btnShowAnswer {
- transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: rgb(252, 215, 221);
-padding: 0 1rem 0 1rem;
-  width: auto; 
-  border-radius: 20px;
-  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(-35deg, #afcdcf 0%, #f1fff6db 100%);
+  box-shadow:
+    5px 5px 10px #517a773d,
+    10px 15px 20px rgba(32, 60, 58, 0.2);
 
+  color: var(--tag-color);
+  border: 0.1px solid var(--bookmark-color);
+  padding: 1em 1em 1.2em 1em;
+
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.btnShowAnswer:hover {
+  transform: scale(1.04);
+
+  box-shadow:
+    5px 5px 12px #517a773d,
+    10px 15px 20px rgba(32, 60, 58, 0.3);
+}
+
+.pink {
+  opacity: 0.8;
+}
+
+.btnShowAnswer span {
+  margin: 0.8em;
 }
 
 .btnShowAnswer:active {
-  transform: scale(0.85); /* Shrinks slightly when clicked */
+  transform: scale(0.8); /* Shrinks slightly when clicked */
 }
 
 ul {
@@ -138,8 +172,8 @@ ul {
 
 .tagList {
   padding: 0; /* This removes that purple ghost space */
-  
-    margin: 2rem 0 1rem 0;
+
+  margin: 2rem 0 1rem 0;
   display: flex;
   justify-content: flex-start;
   /* margin-top: auto;  */
@@ -149,15 +183,11 @@ ul {
 .tagList li {
   width: auto;
   height: auto;
-  background-color: rgb(102, 148, 164);
-  font-size: 15px;
-  padding: 2px 10px 2px 10px;
+  background-color: var(--tag-color);
+  font-size: 0.8em;
+  padding: 0.4em 1em 0.4em 1em;
+  /* padding: 4px 10px 4px 10px; */
   border-radius: 5px;
   color: aliceblue;
   margin: 0 0 10px 10px;
-}
-
-
-.navBarHome {
-  filter: invert(100);
 }

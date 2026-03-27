@@ -24,7 +24,7 @@ div class="questionBoxContainer">
           >
             <path
             
-              stroke="#000"
+              stroke="rgb(11 32 40)"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
@@ -35,7 +35,7 @@ div class="questionBoxContainer">
 
           <p class="answer">Cascading Style Sheets</p>
           <button class="btnShowAnswer">
-            <p class="showAnswer">Show Answer</p>
+            <span class="showAnswer">Show Answer</span>
           </button>
           <ul class="tagList">
             <li>CSS</li>

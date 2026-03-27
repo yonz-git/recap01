@@ -33,13 +33,26 @@ input {
 }
 
 .btnSubmit {
-  padding: 0.5rem;
-  border-radius: 10px;
-  background-color: #9ef8fa;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 1rem 1.4rem 1.1rem 1.4rem;
+  border-radius: 50px;
+  /* background: var(--box-color); */
+  background: linear-gradient(-35deg, #afcdcf 0%, #f1fff6db 100%);
+  box-shadow:
+    5px 5px 10px #517a773d,
+    10px 15px 20px rgba(32, 60, 58, 0.2);
+
   margin: 1rem 0 2.5rem 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: var(--tag-color);
+  border: 0.1px solid var(--bookmark-color);
 }
 
-/* .btnSubmit:hover {
-  filter: invert(1);
-} */
+.btnSubmit:hover {
+  transform: scale(1.02);
+
+  box-shadow:
+    5px 5px 12px #517a773d,
+    10px 15px 20px rgba(32, 60, 58, 0.3);
+}

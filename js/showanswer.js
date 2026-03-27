@@ -8,17 +8,17 @@ allCards.forEach((card) => {
     answer.classList.toggle("is-visible");
   });
 
-  const btnText = button.querySelector("p");
+  const btnText = button.querySelector("span");
 
   button.addEventListener("click", () => {
     // btnText.textContent = "Hide Answer";
 
     if (answer.classList.contains("is-visible")) {
       btnText.textContent = "Hide Answer";
-      // btnText.classList.add("blue");
+      button.classList.add("pink");
     } else {
       btnText.textContent = "Show Answer";
-      // btnText.classList.add("red");
+      button.classList.remove("pink");
     }
   });
 });
