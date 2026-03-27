@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+#label {
+  font-size: 1.3rem;
+}
+/* 
+#question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.addQuestion {
+  margin: 2.5rem 0 1.4rem 0;
+}
+
+[data-js="form"] {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers items horizontally */
+  gap: 1rem; /* Adds nice spacing between inputs */
+  width: 100%;
+  margin-top: 1rem;
+}
+
+textarea,
+input {
+  width: 80%; /* Adjust this for how wide you want them */
+  max-width: 400px; /* Keeps them from getting too huge on desktop */
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btnSubmit {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #9ef8fa;
+  margin: 1rem 0 2.5rem 0;
+  font-size: 1rem;
+}
+
+/* .btnSubmit:hover {
+  filter: invert(1);
+} */

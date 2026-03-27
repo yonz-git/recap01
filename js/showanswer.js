@@ -15,10 +15,10 @@ allCards.forEach((card) => {
 
     if (answer.classList.contains("is-visible")) {
       btnText.textContent = "Hide Answer";
-      btnText.classList.add("blue");
+      // btnText.classList.add("blue");
     } else {
       btnText.textContent = "Show Answer";
-      btnText.classList.add("red");
+      // btnText.classList.add("red");
     }
   });
 });
