@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/home.css" />
 
     <script src="js/index.js" defer></script>
     <script src="js/showanswer.js" defer></script>
@@ -12,33 +13,46 @@
     <script src="js/navbar.js" defer></script>
     <script src="js/form.js" defer></script>
 
-    <title>Document</title>
   </head>
   <body class="pageForm">
     <header>
       <nav class="site-nav">
-        <p class="main-title" aria-labelledby="title">Create new Quiz</p>
+        <h2 class="main-title" aria-labelledby="title">Create new Quiz Card</h2>
       </nav>
     </header>
 
+
+
     <main id="formContent" class="formContent">
-      <section class="formNewCard">
-        <form data-js="form">
-          <label for="question">Your Question:</label>
-          <textarea id="question" name="question" rows="3" required></textarea>
+      <section class="formContainer">
 
-          <label for="answer">The Answer:</label>
-          <textarea id="answer" name="answer" rows="3" required></textarea>
+        <article class="newCardForm" data-js="newCardForm">
+          
+          <form data-js="form">
+    <label id="label" for="question">Your Question:</label>
+    <textarea id="question" data-js="question" name="question" rows="3" required></textarea>
+    <!-- <p class="characters">16 characters left</p> -->
 
-          <label for="tag">Hashtag:</label>
-          <input type="text" id="tag" name="tag" placeholder="#css" required />
+    <label id="label"  for="answer">The Answer:</label>
+    <textarea id="answer" data-js="answer" name="newAnswer" rows="3" required></textarea>
 
-          <button type="submit" class="btnSubmit" data-js="submit">
-            Create Question
-          </button>
-        </form>
-      </section>
+ <!-- <p class="characters">150 characters left</p> -->
+    <label id="label" for="tag">Hashtag:</label>
+    <input type="text" id="tag" data-js="tag" name="tag" placeholder="#css" required />
+
+    <button type="submit" class="btnSubmit" data-js="submit">Create Card</button>
+  </form>
+
+          
+</article>
+     
+       
+  </form> 
+</section>
+ 
     </main>
+
+  
 
     <footer class="navBarContainer frosted" data-js="footerContainer"></footer>
   </body>
