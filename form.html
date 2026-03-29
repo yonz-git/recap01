@@ -30,13 +30,13 @@
           
           <form data-js="form">
     <label id="label" for="question">Your Question:</label>
-    <textarea id="question" data-js="question" name="question" rows="3" required></textarea>
-    <!-- <p class="characters">16 characters left</p> -->
+    <textarea id="question" data-js="question" name="question" maxlength="76" required></textarea>
+ <small class="character-counter" data-js="question-counter">76 characters left</small>
 
     <label id="label"  for="answer">The Answer:</label>
-    <textarea id="answer" data-js="answer" name="newAnswer" rows="3" required></textarea>
+    <textarea id="answer" data-js="answer" name="newAnswer" maxlength="150"  required></textarea>
+    <small class="character-counter" data-js="question-counter">150 characters left</small>
 
- <!-- <p class="characters">150 characters left</p> -->
     <label id="label" for="tag">Hashtag:</label>
     <input type="text" id="tag" data-js="tag" name="tag" placeholder="#css" required />
 

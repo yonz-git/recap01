@@ -146,3 +146,38 @@ form .btnSubmit {
   color: var(--tag-color);
   border: 0.1px solid var(--bookmark-color);
 }
+
+.btnShowAnswer {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(-35deg, #afcdcf 0%, #f1fff6db 100%);
+  box-shadow:
+    5px 5px 10px #517a773d,
+    10px 15px 20px rgba(32, 60, 58, 0.2);
+
+  color: var(--tag-color);
+  border: 0.1px solid var(--bookmark-color);
+  padding: 1em 1em 1.2em 1em;
+
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.btnShowAnswer:hover {
+  transform: scale(1.04);
+
+  box-shadow:
+    5px 5px 12px #517a773d,
+    10px 15px 20px rgba(32, 60, 58, 0.3);
+}
+
+.pink {
+  opacity: 0.8;
+}
+
+.btnShowAnswer span {
+  margin: 0.8em;
+}
+
+.btnShowAnswer:active {
+  transform: scale(0.8); /* Shrinks slightly when clicked */
+}

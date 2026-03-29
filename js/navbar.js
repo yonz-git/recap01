@@ -21,7 +21,7 @@ const footerHTML = `
         </li>
 
         <li class="navBarAdd">
-          <a href="add.html" aria-label="Go to Add Page">
+          <a href="form.html" aria-label="Go to Add Page">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.86em"
