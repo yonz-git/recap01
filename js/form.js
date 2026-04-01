@@ -4,6 +4,13 @@ const submit = document.querySelector('[data-js="submit"]');
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
+  //DATA collection
+
+  const formElements = event.target.elements;
+  const questionData = formElements.question.value;
+  const newAnswerData = formElements.newAnswer.value;
+  const tagData = formElements.tag.value;
+
   const newCardContainer = document.createElement("section");
   document.getElementById("formContent").append(newCardContainer);
   newCardContainer.classList.add("newCardContainer");
@@ -13,20 +20,23 @@ form.addEventListener("submit", (event) => {
   newCard.classList.add("newCard");
 
   const question = document.createElement("h3");
-  const newAnswer = document.createElement("h2");
-  newCard.append(question, newAnswer);
-  question.classList.add("question");
-  newAnswer.classList.add("newAnswer");
+  question.textContent = questionData;
 
+  const newAnswer = document.createElement("h2");
   const btnShowAnswer = document.createElement("button");
-  newAnswer.append(btnShowAnswer);
+
+  question.classList.add("question");
+  newAnswer.classList.add("answer");
+  newCard.append(question, newAnswer, btnShowAnswer);
+  newAnswer.textContent = newAnswerData;
+
   btnShowAnswer.classList.add("btnShowAnswer");
   btnShowAnswer.textContent = "Show Answer";
 
   btnShowAnswer.addEventListener("click", () => {
-    answerParagraph.classList.toggle("is-visible");
+    newAnswer.classList.toggle("is-visible");
 
-    if (answerParagraph.classList.contains("is-visible")) {
+    if (newAnswer.classList.contains("is-visible")) {
       btnShowAnswer.textContent = "Hide Answer";
     } else {
       btnShowAnswer.textContent = "Show Answer";
@@ -38,23 +48,10 @@ form.addEventListener("submit", (event) => {
   tagList.classList.add("tagList");
 
   const tag = document.createElement("li");
-  tagList.append(tag);
-  tag.classList.add("tag");
-
-  //DATA collection
-
-  const formElements = event.target.elements;
-  const questionData = formElements.question.value;
-  const newAnswerData = formElements.newAnswer.value;
-  const tagData = formElements.tag.value;
-
-  question.textContent = questionData;
-
   tag.textContent = tagData;
 
-  const answerParagraph = document.createElement("p");
-  answerParagraph.textContent = newAnswerData;
-  answerParagraph.classList.add("answer-text");
+  tagList.append(tag);
+  tag.classList.add("tag");
 });
 
 const textareas = document.querySelectorAll("textarea");
